@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-Table</title>
+    <link rel="stylesheet" href="style.css">
+    <!--line 10 is  my fontawesom kit for icon -->
+    <script src="https://kit.fontawesome.com/bbb774ff54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="add">add</button>
+    <input type="text" class="search" placeholder="search">
+    <table border="1">
+        <thead>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Tool</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Asad</td>
+                <td>Abbasov</td>
+                <td>18</td>
+                <td>100$</td>
+                <td><i class="fa-solid fa-trash" onclick="clearFunction(this)"></i></td>
+                <!-- onclick="clearFunction" is my function which is deleted row of table  -->
+            </tr>
+        </tbody>
+    </table>
+    <div class="modal">
+        
+        <div class="modal-box">
+        <input type="text" class="name" placeholder="please enter name">
+        <input type="text" class="surname" placeholder="please enter surname"> 
+        <input type="text" class="age" placeholder="please enter age">
+        <input type="text" class="salary" placeholder="please enter salary">
+        <button class="execute">Execute</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
